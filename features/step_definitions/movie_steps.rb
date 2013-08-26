@@ -55,7 +55,13 @@ Then /^I should (not )?see movies rated: (.*)/ do |qualifier, ratings|
   end
 end
 
-
+Then /^I should see (.*) movies/ do |qualifier|
+  if qualifier == "all"
+    page.all('tr').count.should == Movie.all.count+1
+  else
+    page.all('tr').count.should == 1
+  end
+end
 
 
 
