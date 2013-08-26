@@ -1,3 +1,17 @@
+#### Version Notes: 
+
+*Use Ruby 1.9.2*
+
+*If using Ruby 1.9.3, replace the line 
+
+`gem 'ruby-debug19', :require => 'ruby-debug'` 
+
+in the gemfile with 
+
+`gem 'debugger'`*
+
+*see http://stackoverflow.com/questions/10918019/gem-issue-database-rake-aborted*
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
